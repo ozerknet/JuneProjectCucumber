@@ -2,7 +2,7 @@
 Feature: Dropdwon menu control
 
 
-@wip
+
   Scenario: dropdwon menu verificcation
     When user go to link
     Then check options data is avaible
