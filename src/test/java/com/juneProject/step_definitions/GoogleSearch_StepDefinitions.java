@@ -18,6 +18,8 @@ public class GoogleSearch_StepDefinitions {
             googleSearchPage.IAggreeButton.click();
         }else if(googleSearchPage.acceptAll.isDisplayed()){
             googleSearchPage.acceptAll.click();
+        }else {
+            System.out.println("No cookies ask...");
         }
 
     }
