@@ -14,13 +14,13 @@ public class GoogleSearch_StepDefinitions {
     public void user_is_on_google_search_page() {
         String url = ConfigurationReader.getProperty("google.url");
         Driver.getDriver().get(url);
-        if(googleSearchPage.IAggreeButton.isDisplayed()) {
-            googleSearchPage.IAggreeButton.click();
-        }else if(googleSearchPage.acceptAll.isDisplayed()){
-            googleSearchPage.acceptAll.click();
-        }else {
-            System.out.println("No cookies ask...");
-        }
+//        if(googleSearchPage.IAggreeButton.isDisplayed()) {
+//            googleSearchPage.IAggreeButton.click();
+//        }else if(googleSearchPage.acceptAll.isDisplayed()){
+//            googleSearchPage.acceptAll.click();
+//        }else {
+//            System.out.println("No cookies ask...");
+//        }
 
     }
     @Then("user should see title is Google")
