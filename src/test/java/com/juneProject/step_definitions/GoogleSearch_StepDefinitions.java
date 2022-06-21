@@ -14,7 +14,11 @@ public class GoogleSearch_StepDefinitions {
     public void user_is_on_google_search_page() {
         String url = ConfigurationReader.getProperty("google.url");
         Driver.getDriver().get(url);
-        googleSearchPage.IAggreeButton.click();
+        if(googleSearchPage.IAggreeButton.isDisplayed()) {
+            googleSearchPage.IAggreeButton.click();
+        }else if(googleSearchPage.acceptAll.isDisplayed()){
+            googleSearchPage.acceptAll.click();
+        }
 
     }
     @Then("user should see title is Google")
