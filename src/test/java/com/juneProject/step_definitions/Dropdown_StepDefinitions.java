@@ -21,7 +21,7 @@ public class Dropdown_StepDefinitions {
         Driver.getDriver().get(url);
 
     }
-    @Then("check options data is avaible")
+    @Then("check options data is available")
     public void check_option_data_is_avaible(List<String> expectedMenu) {
         List<String> actualMenu = BrowserUtils.dropdownOptionsAsString(dropdownPage.selectMenu);
 
